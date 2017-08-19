@@ -63,6 +63,8 @@ h1, p{
 	background-color: #eee;
 	text-transform: uppercase;
 	letter-spacing: 1px;
+	width: 120px;
+	height: 40px;
 	font-size: 10px;
 	padding: 5px 15px;
 	border-radius: 5px;
@@ -70,4 +72,8 @@ h1, p{
 	-webkit-border-radius: 5px;
 	border: 1px solid rgba(0,0,0,0.3);
 	border-bottom-width: 3px;
+}
+
+button:hover {
+	border-color: red;
 }

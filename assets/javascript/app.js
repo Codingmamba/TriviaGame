@@ -21,7 +21,7 @@ var quiz = [ {
 		choices: ['Los Angeles Lakers','Miami Heat','Indiana Pacers','New Orleans Pelicans'],
 		correct: 1,
 	},
-	{	question: "Question 2 - How tall is an NBA rim?",
+	{	question: "Question 2 - How tall is a NBA rim?",
 		picture: 'assets/images/rim.png',
 		choices: ['12 foot','11.5 foot','9 foot','10 foot'],
 		correct: 3,
@@ -66,7 +66,7 @@ var quiz = [ {
 		choices: ['Kyrie Irving','Dion Waiters','Clay Thompson','Paul George'],
 		correct: 0,
 	},	
-	{	question: "Question 11 - The 15/16 season NBA championship series went to how many games?",
+	{	question: "Question 11 - The 15/16 season NBA championship series went to how many games out of 7?",
 		picture: 'assets/images/finals.jpg',
 		choices: ['4','7','5','6'],
 		correct: 1,	
@@ -99,7 +99,6 @@ function nextQuest(){
 	$('#answer3').text(quiz[counter].choices[3]);
 }
 
-
 // if there is no selection from the user
 function validate() {
 	if ($('input').is(':checked')) {
@@ -124,6 +123,10 @@ $('#nextBtn').on('click', function() {
 	// increment score if indeed correct
 	if (answer == quiz[counter].correct) {
 		numCorrect++;
+		alert("Thats the right answer");
+	}
+	else {
+		alert("Sorry, that is incorrect");
 	}
 
 	counter++;
